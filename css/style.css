@@ -101,9 +101,10 @@ nav{
   display: none;
   font-size: 40px;
   margin-top: 7.5px;
+
   text-align: center;
 }
-.bar p{
+#bar-but{
 
   font-size: 60px;
   color:red;
@@ -637,7 +638,7 @@ justify-content: space-between;
   padding-left: 20px;
   font-size: 18px;
   line-height: 20px;
-  border: 2px solid #ccc;
+  border: 1px solid #ccc;
 
 }
 .contact-textarea:hover{
@@ -702,7 +703,7 @@ padding-top:80px;
 
   }
 
-/*-------------------Responsiv------------------------*/
+/*-------------------Responsive------------------------*/
 @media screen and (max-width:1500px){
   #glavni-text{
     font-size: 28px;
@@ -772,9 +773,7 @@ padding-top:80px;
 }
 
 @media screen and (max-width:1180px){
-  header{
-    width: 1200px;
-  }
+
   nav{
 
     justify-content: space-between;

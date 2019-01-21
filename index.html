@@ -75,7 +75,7 @@
     <h3 style="font-size:18px;">Mi ćemo Vas kontaktirati radi dogovora oko lokacije preuzimanja vozila!</h3>
     <h3 style="font-size:18px; margin-top:30px;">Besplatno na teritoriji Beograda</h3>
     <form method="get" action="#" id="form-style" autocomplete="off">
-      <select class="select-form" name="car-type">
+      <select class="select-form"id="car-select" name="car-type">
         <option> Izaberite vozilo za rezervaciju</option>
         <option>VW Polo Comfortline 1.2 TSI</option>
         <option>VW Polo Trendline 1.0</option>
@@ -92,10 +92,10 @@
           <option>Beograd</option>
         </select>
         <input type="text"  class="input-class datepicker" placeholder="Izaberite datum vracanja " name="pick-date"/>
-        <input type="text" id="ime" class="input-class-mini" id="ime"  name="name" placeholder="Unesite vase ime"/>
-        <input type="text" id="email" class="input-class-mini"  name="e-mail" placeholder="Unesite vas E-mail" style="margin-left:2.8%" />
-        <input type="text" class="input-class-mini"  name="phone-number" placeholder="Unesite vas broj telefona" style="margin-left:2.8%" />
-        <button type="button" onclick="provera()" class="form-button"  name="button-reserve">Rezerviši</button>
+        <input type="text" id="ime" class="input-class-mini" id="ime"  name="name" placeholder="Unesite vase ime" required/>
+        <input type="email" id="email" class="input-class-mini"  name="e-mail" placeholder="Unesite vas E-mail" style="margin-left:2.8%" />
+        <input type="number" id="broj" class="input-class-mini"  name="phone-number" placeholder="Unesite vas broj telefona" style="margin-left:2.8%" required/>
+        <button type="submit" onclick="provera()" class="form-button"  name="button-reserve">Rezerviši</button>
     </form>
 
   </div>
@@ -305,9 +305,9 @@
         </div>
         <div id="kontakt-form-box">
             <form method="get" action="#"  autocomplete="off">
-                <input type="text" class="input-class" name="contact-name" placeholder="Ime"/>
-                <input type="text" class="input-class" name="contact-e-mail" placeholder="E-mail"/>
-                <input type="text" class="input-class" name="contact-phone-num" placeholder="Telefon"/>
+                <input type="text" class="input-class" name="contact-name" placeholder="Ime" required/>
+                <input type="email" class="input-class" name="contact-e-mail" placeholder="E-mail" required/>
+                <input type="text" class="input-class" name="contact-phone-num" placeholder="Telefon" required/>
                 <input type="text" class="input-class" name="contact-address" placeholder="Adresa"/>
                 <textarea class="contact-textarea" name="contact-message" placeholder="Poruka ili Komentar"></textarea>
 
