@@ -1,0 +1,1065 @@
+*{
+  margin: 0px;
+  padding: 0;
+  font-family: sans-serif;
+  -moz-appearance: none;
+
+}
+
+
+header{
+  width: 100%;
+  height: 700px;
+  position: relative;
+  right:-100px;
+  left: 0px;
+  background-image: url("../img/audiA4.jpg");
+  background-repeat: no-repeat;
+  background-position:center;
+  background-size: cover;
+}
+#wrapp-nav{
+  height: 80px;
+  width: 100%;
+  margin-top: 0px;
+}
+nav{
+
+
+  display: flex;
+  height: 80px;
+  width: 100%;
+  top: 0px;
+  justify-content: space-around;
+  z-index: 100;
+
+}
+#nav-on-click{
+  display: none;
+  position: fixed;
+  height: 260px;
+  width: 250px;
+  top: 80px;
+  right: 0px;
+  justify-content: space-around;
+  z-index: 100;
+  background-color: red;
+  border-top-left-radius: 25px;
+  border-bottom-left-radius: 10px;
+}
+.nav-on-click-scroll{
+  background-color: black!important;
+}
+
+.logo{
+
+  height: 50px;
+  width: 200px;
+  float:left;
+  background-image: url("../img/logo.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin-top: 15px;
+
+}
+.menu-place{
+
+  width: 500px;
+  height: 100%;
+  float:left;
+
+
+}
+.menu{
+
+  display: flex;
+  list-style-type: none;
+  justify-content: space-between;
+
+}
+.li-class{
+
+  float: left;
+  padding: 10px;
+  margin-top: 18.5px;
+  font-size: 20px;
+
+
+
+
+}
+.a-cl{
+  text-decoration: none;
+  color: white;
+
+
+}
+.bar{
+  width: 100px;
+  height: 50px;
+  display: none;
+  font-size: 40px;
+  margin-top: 7.5px;
+  text-align: center;
+}
+.bar p{
+
+  font-size: 60px;
+  color:red;
+  cursor: pointer;
+}
+.nav-scroll{
+  position: fixed;
+  top: 0px;
+  display: flex;
+  height: 80px;
+  width: 100%;
+  background-color: #141313;
+  opacity: 0.9;
+  justify-content: space-around;
+  z-index: 100;
+
+}
+
+
+.a-cl-scroll{
+  text-decoration: none;
+  color: white;
+  margin-bottom:50px;
+}
+
+#menu-on-click{
+list-style-type: none;
+display: inline;
+}
+
+.li-class-on-click{
+  width: 100%;
+  height: 30px;
+  font-size: 22px;
+  color:white;
+  padding-left: 20px;
+  padding-top: 20px;
+  border-bottom: 1px solid rgba(255,255,255,.3);
+
+}
+
+#text-slika{
+  margin-top: 0px;
+  width: 100%;
+  height: 590px;
+
+}
+#prvi-text{
+  width: 100%;
+  height: 50px;
+  word-break: keep-all;
+  color: white;
+  text-align: center;
+  padding-top: 150px;
+  font-size: 18px;
+}
+#glavni-text{
+  width: 100%;
+  height: 70px;
+  word-break:keep-all;
+  color: white;
+  text-align: center;
+  padding-top: 10px;
+  font-size: 33px;
+}
+#sporedni-text{
+  height: 90px;
+  width: 50%;
+margin-left: 25%;}
+#sporedni-text p{
+
+  word-break:keep-all;
+  color: white;
+  text-align: center;
+  padding-top: 45px;
+  font-size: 18px;
+}
+#dugme-header{
+  height: 90px;
+  width: 100%;
+
+
+
+}
+
+ .button-first{
+  margin-top: 35px;
+  margin-left: 47%;
+  background-color: red;
+  padding: 12px 30px;
+  text-decoration: none;
+  color:white;
+  font-size: 18px;
+  border:1px solid black;
+  text-transform: uppercase;
+  cursor: pointer;
+
+}
+#fixed-dugme{
+  position: fixed;
+  top:300px;
+  left:-50px;
+  transform: rotate(270deg);
+  z-index: 100;
+
+}
+#fixed-dugme button {
+  font-size: 12px;
+  width: 170px;
+  padding: 20px;
+  border-radius: 25px;
+  letter-spacing: 1px;
+  font-weight: bold;
+  border: 2px solid black;
+}
+.form-button{
+  margin-top: 50px;
+  height: 60px;
+  padding: 15px;
+  color: white;
+  background-color: #01000c;
+  border: 2px solid black;
+  font-size: 18px;
+  cursor: pointer;
+
+}
+.but-res-style{
+  margin-top:20px;
+  font-size:23px;
+   text-transform: uppercase;
+}
+
+.button-click-class{
+
+  background-color: black;
+  border:none;
+}
+button:focus{
+  outline: 0;
+}
+
+.red-letter{
+  color: red;
+}
+.orange-letter{
+  color: #c16c0a;
+}
+main{
+  margin:0 auto;
+  width: 100%;
+  height: 600px;
+  display: flex;
+  justify-content: space-around;
+}
+#form-box{
+
+  position: relative;
+  top:-100px;
+  width: 1100px;
+  height: 600px;
+  padding: 40px;
+  color: white;
+  background-color: red;
+  border-radius: 10px;
+  text-align: center;
+
+}
+.select-form:focus{
+  outline: 0;
+}
+.select-form{
+  margin-top: 50px;
+  width: 100%;
+  height:50px;
+  padding:10px 15px;
+  font-size: 22px;
+  color:grey;
+
+}
+
+.select-form-mini{
+  margin-top: 20px;
+  width: 45%;
+  height:50px;
+  padding:10px 15px;
+  font-size: 22px;
+  color:grey;
+  float: left;
+
+}
+.select-form-mini:focus{
+  outline: 0;
+}
+
+
+.input-class{
+  width: 45%;
+  float: right;
+  margin-top: 20px;
+  height: 26px;
+  font-size: 22px;
+  color:grey;
+  padding:10px 15px;
+
+}
+.input-class:focus{
+  outline: 0;
+}
+.input-class-mini{
+  display: flex;
+  width: 28%;
+  float: left;
+  margin-top: 20px;
+  height: 26px;
+  font-size: 22px;
+  color:grey;
+  padding:10px 15px;
+  justify-content:space-between;
+
+
+}
+.input-class-mini:focus{
+  outline: 0;
+}
+#form-style{
+  height: 500px;
+
+}
+
+.button-form-reserve{
+  background-color: #7f7f84!important;
+  color:black!important;
+  border: 2px solid #4f4f5b;
+}
+.menu-hover{
+  color:red!important;
+}
+#automobili-wrapper{
+  width: 100%;
+  height: 650px;
+  padding-top: 60px;
+  padding-bottom: 70px;
+
+}
+#automobili-header{
+  width: 1100px;
+  height: 150px;
+  padding-left:40px;
+  padding-right: 40px;
+  margin: 0 auto;
+  margin-bottom:100px;
+  text-align: center;
+  color:black;
+
+}
+#automobili-header p{margin-top:70px;
+  font-size:18px;
+  color:grey;}
+#automobili-main{
+  display: flex;
+  justify-content;
+  width: 1100px;
+  height: 500px;
+  padding-left:40px;
+  padding-right: 40px;
+  margin: 0 auto;
+/*  background-color: red;*/
+}
+.opis-automobila{
+ display: flex;
+ width: 1100px;
+ height: 500px;
+ padding-left:40px;
+ padding-right: 40px;
+ justify-content: space-between;
+ background-color: white!important;
+
+}
+.ime-automobila{
+width: 300px;
+height: 300px;
+padding-top: 70px;
+float: left;
+color: red;
+font-size: 25px;
+text-transform: uppercase;
+
+
+}
+.ime-automobila h4{
+  color:#808080;
+  padding-top: 5px;
+}
+.slika-automobila{
+  width: 500px;
+  height: 355px;
+  background-color: white;
+  float: left;
+  padding-top: 50px;
+}
+.karakteristike-list{
+  width: 300px;
+  height: 500px;
+  float: left;
+  padding-top: 50px;
+
+}
+.slika{
+  width: 100%;
+  height: 100%;
+}
+.ime-automobila{
+  background-color: white;
+}
+.karak-ul{
+  list-style-type: none;
+  background-color: red;
+  padding: 20px;
+
+}
+.karak-ul li{
+padding: 10px;
+color: #f2f2f2;
+border-bottom: 1px solid rgba(255,255,255,.2);
+}
+.karak-ul li h3{
+  float: right;
+}
+#prev-next-buttons{
+  width: 100%;
+  height: 200px;
+
+  margin: 0 auto;
+}
+#prev-next{
+
+  margin-left: 47.5%;
+  width: 100px;
+  height: 100px;
+
+}
+.prev-next-font{
+  font-size: 40px;
+  background-color: white;
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+  border: 0px;
+  cursor: pointer;
+  color:#808080;
+}
+#only-text{
+width: 50%;
+height: 300px;
+margin: 0 auto;
+margin-top: -130px;
+text-align: center;
+color: grey;
+
+}
+#only-text p{
+  padding-top: 10px;
+}
+#rules-wrapper{
+  width: 100%;
+  height: 750px;
+  background-color: #030621;
+  margin-top: 350px;
+  padding-top: 50px;
+}
+#rules-main{
+  width: 1200px;
+  height: 700px;
+  margin: 0px auto;
+  padding-top: 50px;
+  padding-bottom: 50px;
+
+
+}
+.rules-txt{
+  width: 45%;
+  height: 350px;
+  padding-left: 25px;
+  padding-right: 25px;
+  float: left;
+  color:white;
+
+}
+.rules-txt h1{
+  font-size: 35px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+.rules-txt p{
+  padding-top: 20px;
+  font-size: 17px;
+}
+
+#about-us-wrapper{
+  width: 100%;
+  height:900px;
+  padding-top: 120px;
+
+}
+#about-us-title{
+  width: 40%;
+  height: 200px;
+  margin: 0 auto;
+
+}
+#about-us-title h1{
+  font-size: 40px;
+  color: black;
+  text-align: center;
+  text-transform: uppercase;
+  }
+  #about-us-title p{
+    color:grey;
+    text-align: center;
+    padding-top: 50px;
+    font-size: 16px;
+    letter-spacing: 1px;
+    line-height: 30px;
+  }
+  #about-us-main{
+    width: 1180px;
+    height: 700px;
+    margin:100px auto;
+
+  }
+#about-us-text{
+width: 50%;
+height: 100%;
+float: left;
+}
+#about-us-pics{
+
+  width: 50%;
+  height: 100%;
+
+  float: left;
+}
+.abus-txt{
+  width: 100%;
+  height:110px;
+
+}
+.abus-txt h3{
+  font-size: 40px;
+  color: red;
+
+}
+.abus-txt p{
+  font-size: 18px;
+  margin-left: 60px;
+  line-height: 30px;
+  margin-top: -45px;
+}
+.pics{
+  width: 100%;
+  height: 301;
+
+
+}
+#car-pic-1{
+  width: 457px;
+  height:261px;
+  margin-left: 50px;
+}
+#car-pic-2{
+  width: 457px;
+  height:301px;
+  margin-left: 50px;
+}
+#kontakt-wrapper{
+margin:0px auto;
+width: 100%;
+height:900px;
+padding-top: 100px;
+
+}
+#kontakt-main{
+margin:0 auto;
+width: 1180px;
+height: 750px;
+
+
+}
+#kontakt-title{
+  margin: 0 auto;
+  width: 100%;
+  height: 200px;
+  text-align: center;
+
+
+}
+
+#kontakt-title h3{
+  margin-top: 50px;
+  font-size:40px;
+  text-transform: uppercase;
+}
+#kontakt-title p{
+  color:grey;
+  margin: 50px auto;
+  width: 664px;
+  font-size: 16px;
+  text-align: center;
+  letter-spacing: 1px;
+  line-height: 30px;
+}
+#kontakt-form-box{
+display: flex;
+width: 100%;
+height: 500px;
+margin: 50px auto;
+justify-content: space-between;
+}
+#kontakt-form-box .input-class{
+  margin-left: 10px;
+  margin-right: 10px;
+  float: left;
+}
+.contact-textarea{
+  width: 95%;
+  height: 150px;
+  margin-top:50px;
+  margin-left: 10px;
+  color: black;
+  padding-top: 20px;
+  padding-left: 20px;
+  font-size: 18px;
+  line-height: 20px;
+  border: 2px solid #ccc;
+
+}
+.contact-textarea:hover{
+  background-color: #f2f2f2;
+}
+.contact-textarea:focus{
+  outline:2px solid red;
+}
+#contact-sub-but{
+background-color: red;
+color: white;
+width: 80%;
+height: 50px;
+margin-top: 50px;
+margin-left: 10%;
+border: 1px solid black;
+border-radius: 20px;
+font-size: 25px;
+letter-spacing: 1px;
+font-weight: bold;
+}
+#contact-sub-but:hover{
+  background-color: #808080;
+  color:black!important;
+
+}
+
+footer{
+width: 100%;
+height: 80px;
+text-align: center;
+color:white;
+background-color: #141313;
+margin-top: 150px;
+padding-top:80px;
+
+
+}
+.ui-widget-header{
+  color:red;
+}
+.ui-state-highlight{
+  color:white!important;
+  border: 1px solid black!important;
+  background-color: red!important;
+}
+.ui-state-active{
+  border:1px solid black!important;
+  color:white!important;
+  background-color: #545556!important;
+}
+.button-hover-class{
+  color:black;
+  background-color: white;
+}
+.contact-sub-but-hover{
+  background-color: #595959!important;
+  color: white;}
+  .option-hover{
+    background-color: #ededed;
+    color:#636262!important;
+
+  }
+
+/*-------------------Responsiv------------------------*/
+@media screen and (max-width:1500px){
+  #glavni-text{
+    font-size: 28px;
+  }
+}
+@media screen and (max-width:1380px){
+  #fixed-dugme{
+    display: none;
+  }
+  #form-box{
+    width: 1000px;
+  }
+}
+@media screen and (max-width:1280px){
+  #glavni-text{
+    font-size: 23px;
+  }
+  #sporedni-text{
+    font-size: 15px;
+  }
+  #form-box{
+    width: 900px;
+  }
+  .input-class-mini{
+    display: block;
+    float: left;
+    width: 249px;
+  }
+
+
+  #automobili-header {
+    width: 900px;
+  }
+  #automobili-header p{
+
+    font-size: 15px;
+
+  }
+
+
+  .rules-txt h1{
+    font-size: 28px;
+
+  }
+  .rules-txt p{
+    font-size: 14px;
+    line-height: 24px;
+  }
+
+
+  .but-res-style{
+    font-size: 18px;
+  }
+  #kontakt-form-box{
+    width: 1080px;
+  }
+  #kontakt-main .input-class{
+    width: 480px;
+  }
+  .abus-txt{
+    width: 95%;
+    float: right;
+  }
+  .abus-txt p{
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width:1180px){
+  header{
+    width: 1200px;
+  }
+  nav{
+
+    justify-content: space-between;
+  }
+  .nav-scroll{
+
+    justify-content: space-between;
+  }
+  .logo{
+    margin-left: 50px;
+
+  }
+  .opis-automobila{
+    width: 980px;
+    margin-left:60px;
+
+  }
+  .ime-automobila{
+    width: 280px;
+  }
+  .slika-automobila{
+    width: 450px;
+  }
+  .karakteristike-list{
+    width: 250px;
+  }
+  .but-res-style{
+    font-size: 18px;
+  }
+  .menu-place{
+    display: none;
+  }
+  .bar{
+    display: block;
+    margin-right: 10px;
+  }
+  .rules-txt{
+    width: 500px;
+  }
+
+  #kontakt-form-box{
+    width: 980px;
+
+  }
+  #kontakt-main .input-class{
+    width: 430px;
+  }
+  footer{
+    width: 1200px;
+  }
+}
+@media screen and (max-width:1140px){
+
+  #sporedni-text p {
+    font-size: 17px;
+  }
+
+}
+@media screen and (max-width:1130px){
+  #car-pic-1{
+    width: 400px;
+  }
+  #car-pic-2{
+    width: 400px;
+  }
+    #about-us-pics{
+    width: 450px;
+  }
+}
+@media screen and (max-width:1100px){
+  .rules-txt{
+    width: 470px;
+  }
+  .opis-automobila{
+    width: 900px;
+    margin-left:60px;
+
+  }
+  .ime-automobila{
+    width: 250px;
+  }
+  #kontakt-form-box{
+    width: 900px;
+
+  }
+  #kontakt-main .input-class{
+    width: 395px;
+  }
+
+}
+@media screen and (max-width:1060px){
+
+  #kontakt-form-box{
+    width: 850px;
+
+  }
+  #kontakt-main .input-class{
+    width: 370px;
+  }
+  #form-box{
+    width: 850px;
+
+  }
+  .input-class-mini{
+    width: 233px;
+  }
+  .rules-txt{
+    width: 450px;
+  }
+  #about-us-pics{
+    width: 400px;
+  }
+  #car-pic-1{
+    width: 400px;
+
+  }
+  #car-pic-2{
+    width: 400px;
+
+  }
+  #about-us-text{
+    width: 45%;
+  }
+.abus-txt p{
+  font-size: 14px;
+}
+.opis-automobila{
+  width: 850px;
+  margin-left:60px;
+
+}
+.ime-automobila{
+  width: 225px;
+}
+.slika-automobila{
+  width: 400px;
+}
+.karakteristike-list{
+  width: 225px;
+}
+#kontakt-title{
+  width: 800px;
+  margin-left: 130px;
+
+}
+ #kontakt-form-box{
+    width: 800px;
+    float:left;
+    margin-left: 130px;
+  }
+  #kontakt-main .input-class{
+    width: 346px;
+  }
+  #about-us-main{
+    width: 890px;
+
+  }
+  .abus-txt{
+    margin-top: 10px;
+  }
+  .abus-txt p{
+    font-size: 13px;
+  }
+  #car-pic-1{
+    margin-left: 25px;
+
+  }
+  #car-pic-2{
+    margin-left: 25px;
+
+  }
+  .rules-txt{
+    width: 400px;
+  }
+}
+@media screen and (max-width:990px){
+  #form-box{
+    width: 800px;
+  }
+  .opis-automobila{
+    width: 820px;
+    margin-left:40px;
+
+  }
+  .ime-automobila{
+    width: 220px;
+  }
+  .slika-automobila{
+    width: 380px;
+  }
+  .karakteristike-list{
+    width: 220px;
+}
+.input-class-mini{
+  width:217px;
+  font-size: 18px;
+
+
+}
+.select-form{
+  font-size: 18px;
+}
+
+.input-class{
+  font-size: 18px;
+}
+.select-form-mini{
+  font-size: 18px;
+}
+#kontakt-title{
+
+  margin-left: 100px;
+
+}
+#automobili-header p{
+  width: 880px;
+}
+}
+@media screen and (max-width:960px){
+#kontakt-form-box{
+  margin-left: 100px;
+  float: left;
+}
+#sporedni-text p {
+  font-size: 16px;
+}
+.karak-ul li{
+  font-size: 15px;
+}
+}
+@media screen and (max-width:930px){
+#kontakt-form-box{
+  margin-left: 80px;
+
+}
+}
+@media screen and (max-width:920px){
+#form-box{
+  width: 750px;
+
+}
+.input-class-mini{
+  width: 202px;
+  height: 20px;
+}
+.select-form{
+  height: 44px;
+}
+.select-form-mini{
+  height: 44px;
+}
+.input-class{
+
+  height: 20px;
+}
+.opis-automobila{
+  width: 790px;
+  margin-left:40px;
+
+}
+.ime-automobila{
+  width: 205px;
+}
+.ime-automobila h3{
+  font-size: 22px;
+}
+.slika-automobila{
+  width: 380px;
+}
+.karakteristike-list{
+  width: 205px;
+}
+.but-res-style{
+  font-size: 15px;
+}
+#kontakt-form-box{
+  margin-left: 70px;
+
+}
+#kontakt-tilte{
+  margin-left: 75px;
+}
+#automobili-header p{
+  width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 5px;
+}

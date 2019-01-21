@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="sr">
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="author" content="Tadija Milanovic">
+    <meta name="description" content="Rent a car Beograd">
+    <meta name="viewport" content="width=device-width, initial-scale = 1.0">
+    <title>TM Rental</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://malsup.github.com/jquery.cycle.all.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="js/javascript.js"></script>
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="icon" type="image/ico" href="img/icon.ico">
+
+
+    </head>
+  <body>
+    <header>
+<!-- - - - - - - - - - - nav- - - - - - - -->
+  <div id="wrapp-nav">
+      <nav >
+        <div class="logo">
+          </div>
+          <div class="menu-place">
+            <ul class="menu">
+              <li class="li-class gl"><a href="#Glavna" class="a-cl gl">Glavna</a></li>
+              <li class="li-class"><a href="#Automobili" class="automob a-cl">Automobili</a></li>
+              <li class="li-class"><a href="#ONama" class="onama a-cl">O nama</a></li>
+              <li class="li-class"><a href="#kontakt" class="a-cl kontakt">Kontakt</a></li>
+
+              </ul>
+            </div>
+            <div  class="bar">
+              <p id="bar-but"><i class="fas fa-bars"></i></p>
+              </div>
+              <div id="nav-on-click">
+                <ul id="menu-on-click">
+                  <li class="li-class-on-click "><a href="#Glavna" class="a-cl gl">Glavna</a></li>
+                  <li class="li-class-on-click "><a href="#Automobili" class="automob a-cl">Automobili</a></li>
+                  <li class="li-class-on-click "><a href="#ONama" class="onama a-cl">O nama</a></li>
+                  <li class="li-class-on-click "><a href="#kontakt" class="a-cl kontakt">Kontakt</a></li>
+                </ul>
+              </div>
+      </nav>
+    </div>
+      <!-- - - - -  - - - - - /nav- - - - - - - -->
+
+
+      <div id="text-slika">
+          <div id="prvi-text">
+            <h2>Nudimo isporuku vozila na Vašu adresu.</h2>
+          </div>
+          <div id="glavni-text">
+            <h1>Dobro došli u <span class="red-letter">TM</span> <span class="red-letter">RENTAL</span> RENT A CAR</h1>
+        </div>
+        <div id="sporedni-text">
+          <p>TM RENTAL RENT A CAR je firma za iznajmljivanje vozila u Beogradu. Nudimo vam kvalitetna vozila za iznajmljivanje u Beogradu po odličnim cenama..</p>
+        </div>
+        <div id="dugme-header">
+          <button  name="button-more" class="button-first" id="but-f">Opširnije</button>
+        </div>
+
+    </div>
+    <div id="fixed-dugme">
+      <button  name="button-fixed" class="button-first">  <i class="fas fa-phone"></i>&nbsp; Pozovite nas</button>
+    </div>
+</header>
+<main>
+  <div id="form-box">
+    <h3 style="text-transform: uppercase; margin-bottom:10px;font-size:20px;">rezerviŠite vozilo danas!</h3>
+    <h3 style="font-size:18px;">Mi ćemo Vas kontaktirati radi dogovora oko lokacije preuzimanja vozila!</h3>
+    <h3 style="font-size:18px; margin-top:30px;">Besplatno na teritoriji Beograda</h3>
+    <form method="get" action="#" id="form-style" autocomplete="off">
+      <select class="select-form" name="car-type">
+        <option> Izaberite vozilo za rezervaciju</option>
+        <option>VW Polo Comfortline 1.2 TSI</option>
+        <option>VW Polo Trendline 1.0</option>
+        <option>VW Golf Trendline 1.6 TDI (Beli)</option>
+        <option>VW Golf Trendline 1.6 TDI (Crveni)</option>
+      </select>
+        <select class="select-form-mini" name="city">
+          <option>Izaberite grad za preuzimanje</option>
+          <option>Beograd</option>
+        </select>
+        <input type="text" class="input-class datepicker" placeholder="Izaberite datum preuzimanja" name="pick-date"/>
+        <select class="select-form-mini" name="city">
+          <option>Izaberite grad za vracanje</option>
+          <option>Beograd</option>
+        </select>
+        <input type="text"  class="input-class datepicker" placeholder="Izaberite datum vracanja " name="pick-date"/>
+        <input type="text" id="ime" class="input-class-mini" id="ime"  name="name" placeholder="Unesite vase ime"/>
+        <input type="text" id="email" class="input-class-mini"  name="e-mail" placeholder="Unesite vas E-mail" style="margin-left:2.8%" />
+        <input type="text" class="input-class-mini"  name="phone-number" placeholder="Unesite vas broj telefona" style="margin-left:2.8%" />
+        <button type="button" onclick="provera()" class="form-button"  name="button-reserve">Rezerviši</button>
+    </form>
+
+  </div>
+
+
+</main>
+
+<div id="automobili-wrapper">
+    <div id="automobili-header">
+      <h3 style="font-size:22px;"> MODELI <span class="red-letter">AUTOMOBILA</span> ZA IZNAJMLJIVANJE</h3>
+      <p>Nudimo nekoliko tipova vozila koja odgovaraju svačijim potrebama u pogledu komfora i cena. Uz dogovor imamo i pogodnost dovoženja vozila na mesto koje odgovara klijentu - vozilo možete preuzeti bilo gde u Beogradu.</p>
+  </div>
+    <div id="automobili-main">
+
+
+
+      <div class="opis-automobila">
+        <div class="ime-automobila">
+          <h3>vw golf 7 1.6 tdi</h3>
+          <h4 style="font-size:15px;">trendline</h4>
+          <h5 style="color:#808080;margin-top:50px;">od <strong style="font-size:48px;color:black;">33&euro;</strong>/dan/PDV ukljucen</h5>
+          <button  name="button-reserve" class="form-button but-res but-res-style" >Rezervišite odmah</button>
+        </div>
+        <div class="slika-automobila">
+          <img class="slika" src="img/1.jpg" alt=""/>
+        </div>
+        <div class="karakteristike-list">
+          <ul class="karak-ul">
+            <li>Cene su uracunate sa PDV-om</li>
+            <li>Besplatna isporuka na Aerodromu</li>
+            <li>Gorivo:<h3>Dizel</h3></li>
+            <li>Menjac:<h3>Manual</h3></li>
+            <li>0-5 dana:<h3>45&euro;</h3></li>
+            <li>6-15 dana:<h3>40&euro;</h3></li>
+            <li style="border-bottom:0px;">16&#43; dana:<h3>33&euro;</h3></li>
+          </ul>
+        </div>
+      </div>
+      <div class="opis-automobila">
+        <div class="ime-automobila">
+          <h3>vw polo 1.2 tsi</h3>
+          <h4 style="font-size:15px;">comfortline</h4>
+          <h5 style="color:#808080;margin-top:50px;">od <strong style="font-size:48px;color:black;">25&euro;</strong>/dan/PDV ukljucen</h5>
+          <button  name="button-reserve" class="form-button but-res but-res-style" >Rezervišite odmah</button>
+        </div>
+        <div class="slika-automobila">
+          <img class="slika" src="img/2.jpg" alt=""/>
+        </div>
+        <div class="karakteristike-list">
+          <ul class="karak-ul">
+            <li>Cene su uracunate sa PDV-om</li>
+            <li>Besplatna isporuka na Aerodromu</li>
+            <li>Gorivo:<h3>Dizel</h3></li>
+            <li>Menjac:<h3>Manual</h3></li>
+            <li>0-5 dana:<h3>35&euro;</h3></li>
+            <li>6-15 dana:<h3>30&euro;</h3></li>
+            <li style="border-bottom:0px;">16&#43; dana:<h3>25&euro;</h3></li>
+          </ul>
+        </div>
+      </div>
+      <div class="opis-automobila">
+        <div class="ime-automobila">
+          <h3>vw polo 1.0</h3>
+          <h4 style="font-size:15px;">trendline</h4>
+          <h5 style="color:#808080;margin-top:50px;">od <strong style="font-size:48px;color:black;">23&euro;</strong>/dan/PDV ukljucen</h5>
+          <button  name="button-reserve" class="form-button but-res but-res-style"  >Rezervišite odmah</button>
+        </div>
+        <div class="slika-automobila">
+          <img class="slika" src="img/3.jpg" alt=""/>
+        </div>
+        <div class="karakteristike-list">
+          <ul class="karak-ul">
+            <li>Cene su uracunate sa PDV-om</li>
+            <li>Besplatna isporuka na Aerodromu</li>
+            <li>Gorivo:<h3>Dizel</h3></li>
+            <li>Menjac:<h3>Manual</h3></li>
+            <li>0-5 dana:<h3>30&euro;</h3></li>
+            <li>6-15 dana:<h3>25&euro;</h3></li>
+            <li style="border-bottom:0px;">16&#43; dana:<h3>23&euro;</h3></li>
+          </ul>
+
+        </div>
+      </div>
+      <div class="opis-automobila">
+        <div class="ime-automobila">
+          <h3>vw golf 7 1.6 tdi</h3>
+          <h4 style="font-size:15px;">trendline</h4>
+          <h5 style="color:#808080;margin-top:50px;">od <strong style="font-size:48px;color:black;">33&euro;</strong>/dan/PDV ukljucen</h5>
+          <button name="button-reserve" class="form-button but-res but-res-style" >Rezervišite odmah</button>
+        </div>
+        <div class="slika-automobila">
+          <img class="slika" src="img/4.jpg" alt=""/>
+        </div>
+        <div class="karakteristike-list">
+          <ul class="karak-ul">
+            <li>Cene su uracunate sa PDV-om</li>
+            <li>Besplatna isporuka na Aerodromu</li>
+            <li>Gorivo:<h3>Dizel</h3></li>
+            <li>Menjac:<h3>Manual</h3></li>
+            <li>0-5 dana:<h3>45&euro;</h3></li>
+            <li>6-15 dana:<h3>40&euro;</h3></li>
+            <li style="border-bottom:0px;">16&#43; dana:<h3>33&euro;</h3></li>
+          </ul>
+        </div>
+      </div>
+
+
+
+
+
+
+    </div>
+    <div id="prev-next-buttons">
+    <div id="prev-next">
+      <button id="prethodno" class="prev-next-font"><i class="fas fa-angle-left"></i></button>
+
+
+      <button id="sledece" class="prev-next-font"><i class="fas fa-angle-right"></i></button>
+    </div>
+    </div>
+    <div id="only-text">
+      <p>Osnovno osiguranje uključeno.</p>
+      <p>Neograničena kilometraža.</p>
+      <p>Sva vozila su opremljena klima uređajima, radio CD plejerima, kao i vazdušnim jastucima i ABS sistemom. </p>
+      <p>Za iznajmljivanje na duži vremenski period ili više vozila, dajemo posebne pogodnosti.</p>
+    </div>
+
+</div>
+<div id="rules-wrapper">
+  <div id="rules-main">
+  <div class="rules-txt" >
+    <h1>osnovi uslovi za najam vozila</h1>
+    <p>Vozač mora imati minimum 21 godinu</p>
+    <p>Minimum 2 godine posedovanja vozačke dozvole i obavezno na uvid</p>
+    <p>Obavezna identifikacija - lična karta ili pasoš na uvid</p>
+    <p>Obavezna kreditna kartica kao sredstvo depozita plaćanja ili gotovinski depozit</p>
+  </div>
+  <div class="rules-txt" >
+    <h1>dužina najma</h1>
+    <p>Minimalna dužina najma je 1 dan (24 časa)</p>
+    <p>Vreme preuzimanja i vraćanja vozila mora biti identično. Tolerišemo samo 60 minuta zakašnjenja kod vraćanja vozila. Po isteku prekoraćenja, zaračunavamo novi, dodatni dan najma</p>
+
+  </div>
+  <div class="rules-txt" >
+    <h1>plaćanje i depozit</h1>
+    <p>Najam se plaća prilikom preuzimanja vozila i to kreditnom karticom (Amex, Visa, Mastercard), gotovinom ili uplatom na račun (pravna lica)</p>
+    <p>Depozit za vreme trajanja najma je obavezan. Depozit se polaže putem kreditne kartice ili gotovine</p>
+    <p>Depozit se određuje na osnovu dužine najma vozila vozila i obuhvata iznos pune cene najma,cenu punog rezervoara i iznos ucešca u šteti za kategoriju vozila koje se iznajmljuje.</p>
+  </div>
+  <div class="rules-txt" >
+    <h1>preuzimanje i vraćanje vozila</h1>
+    <p>Vozilo se može preuzeti i vratiti u našoj poslovnici, a moguća je i dostava odnosno vraćanje vozila izvan poslovnice (hotel, kućna adresa, preduzeće i sl.) na teritoriji Beograda. Vozilo se može preuzeti i vratiti i izvan radnog vremena, uz doplatu.</p>
+    <p>Prilikom preuzimanja i vraćanja vozila, obavezno je potpisivanje obrasca o stanju vozila</p>
+    <p>Savetujemo da sa našim službenikom dobro pregledate vozilo</p>
+  </div>
+
+
+
+</div>
+
+
+
+
+</div>
+<div id="about-us-wrapper">
+
+        <div id="about-us-title">
+          <h1> O <span class="red-letter">Nama</span></h1>
+          <p><strong> TM RENTAL </strong> RENT A CAR je firma za iznajmljivanje vozila u Beogradu. Nudimo vam kvalitetna vozila za iznajmljivanje u Beogradu po odličnim cenama. </p>
+        </div>
+<div id="about-us-main">
+      <div id="about-us-text">
+          <div class="abus-txt">
+            <h3><i class="fas fa-check-square"></i> </h3> <p>Nudimo vam kvalitetna vozila za iznajmljivanje u Beogradu po odličnim cenama.</p>
+          </div>
+          <div class="abus-txt">
+            <h3><i class="fas fa-check-square"></i> </h3> <p>TM RENTAL RENT A CAR nudi odlične pogodnosti ukoliko iznajmljujete vozilo na duži vremenski period. U takvim situacijama imamo specijalne ponude i veoma pristupačne cene.</p>
+          </div>
+          <div class="abus-txt">
+            <h3><i class="fas fa-check-square"></i> </h3> <p>Nudimo pouzdane, nove automobile koji su komforni i redovno servisirani kako bi naši klijenti bili maksimalno sigurni kada iznajme vozilo u našoj rent a car agenciji.</p>
+          </div>
+          <div class="abus-txt">
+            <h3><i class="fas fa-check-square"></i> </h3> <p>Nudimo nekoliko tipova vozila koja odgovaraju svačijim potrebama u pogledu komfora i cena.</p>
+          </div>
+          <div class="abus-txt">
+            <h3><i class="fas fa-check-square"></i> </h3> <p>Uz dogovor imamo i pogodnost dovoženja vozila na mesto koje odgovara klijentu - vozilo možete preuzeti bilo gde u Beogradu.</p>
+          </div>
+
+    </div>
+        <div id="about-us-pics">
+          <div class="pics">
+            <img src="img/3.jpg" alt="vw polo 1.0 grey" id="car-pic-1"/>
+          </div>
+          <div class="pics">
+            <img src="img/4.jpg" alt="vw golf 7 1.6 tdi grey" id="car-pic-2"/>
+          </div>
+        </div>
+  </div>
+
+</div>
+<div id="kontakt-wrapper">
+    <div id="kontakt-main">
+        <div id="kontakt-title">
+          <h3><strong class="red-letter">Kontaktirajte</strong> nas</h3>
+          <p><strong> TM RENTAL </strong> RENT A CAR je firma za iznajmljivanje vozila u Beogradu. Nudimo vam kvalitetna vozila za iznajmljivanje u Beogradu po odličnim cenama.</p>
+
+        </div>
+        <div id="kontakt-form-box">
+            <form method="get" action="#"  autocomplete="off">
+                <input type="text" class="input-class" name="contact-name" placeholder="Ime"/>
+                <input type="text" class="input-class" name="contact-e-mail" placeholder="E-mail"/>
+                <input type="text" class="input-class" name="contact-phone-num" placeholder="Telefon"/>
+                <input type="text" class="input-class" name="contact-address" placeholder="Adresa"/>
+                <textarea class="contact-textarea" name="contact-message" placeholder="Poruka ili Komentar"></textarea>
+
+                <input type="submit" id="contact-sub-but"  name="submit-contact" value="Pošaljite Poruku"/>
+            </form>
+        </div>
+    </div>
+</div>
+<footer>
+  <p>&copy; 2019 Tadija Milanovic broj indeksa | 2018201364 | </p>
+
+</footer>
+
+<!-- *******************JAVASCRIPT***************************** -->
+
+
+
+<script>
+    $(document).ready(function(){
+    $("button").hover(
+       function(){ $(this).addClass("button-hover-class") },
+       function(){ $(this).removeClass("button-hover-class") }
+)
+});
+</script>
+<script>
+    $(document).ready(function(){
+    $(".form-button").hover(
+       function(){ $(this).addClass("button-form-reserve") },
+       function(){ $(this).removeClass("button-form-reserve") }
+)
+});
+</script>
+<script>
+    $(document).ready(function(){
+    $("a").hover(
+       function(){ $(this).addClass("menu-hover") },
+       function(){ $(this).removeClass("menu-hover") }
+)
+});
+</script>
+
+<script>
+$(document).ready(function(){
+$("select").hover(
+   function(){ $(this).addClass("option-hover") },
+   function(){ $(this).removeClass("option-hover") }
+)
+});
+
+
+</script>
+<script>
+$(document).ready(function(){
+$("input").hover(
+   function(){ $(this).addClass("option-hover") },
+   function(){ $(this).removeClass("option-hover") }
+)
+});
+
+</script>
+
+<script>
+  $(document).ready(function(){
+    $("#automobili-main").cycle({fx:"scrollHorz",timeout:0,speed:1500,prev:   "#prethodno",next: "#sledece"});
+
+  });
+
+</script>
+<script>
+$(document).ready(function () {
+  $("#but-f").click(function (){
+    $("html, body").stop().animate({
+      scrollTop: $("#about-us-wrapper").offset().top
+    }, 1500)
+  }),
+  $(".gl").click(function (){
+    $("html, body").stop().animate({
+      scrollTop: $("#wrapp-nav").offset().top
+    }, 1500)
+  }),
+  $(".automob").click(function() {
+  $("html, body").stop().animate({
+    scrollTop: $("#automobili-wrapper").offset().top
+  }, 1300)
+}),
+  $(".onama").click(function (){
+    $("html, body").stop().animate({
+      scrollTop: $("#about-us-wrapper").offset().top
+    }, 1500)
+  }),
+  $(".kontakt").click(function (){
+    $("html, body").stop().animate({
+      scrollTop: $("#kontakt-wrapper").offset().top
+    }, 1500)
+  }),
+  $(".but-res").click(function (){
+    $("html, body").stop().animate({
+      scrollTop: $("#but-f").offset().top
+    }, 1000)
+  })
+});
+</script>
+<script>
+$(function() {
+    var nav = $("nav");
+
+    $(window).scroll(function() {
+        var scroll = $(window).scrollTop();
+          var aTagClass = $(".a-cl");
+        if (scroll ) {
+            nav.addClass("nav-scroll");
+            aTagClass.addClass("a-cl-scroll");
+        } else {
+            nav.removeClass("nav-scroll");
+            aTagClass.removeClass("a-cl-scroll");
+        }
+    });
+
+});
+</script>
+<script>
+$(function() {
+    var changeMenu= $("#nav-on-click");
+
+    $(window).scroll(function() {
+        var scroll = $(window).scrollTop();
+
+        if (scroll ) {
+            changeMenu.addClass("nav-on-click-scroll");
+
+        } else {
+            changeMenu.removeClass("nav-on-click-scroll");
+
+        }
+    });
+
+});
+</script>
+<script>
+  $( function() {
+    $( ".datepicker" ).datepicker();
+  } );
+  </script>
+  <script>
+  $(document).ready(function(){
+  $("#bar-but").click(function(){
+    $("#nav-on-click").stop().slideToggle();
+
+    });
+  });
+  </script>
+
+  </body>
+</html>
